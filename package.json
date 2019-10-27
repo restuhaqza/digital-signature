@@ -4,12 +4,15 @@
   "description": "Library for create and verify digital signature",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha --check-leaks --reporter spec --bail"
   },
   "keywords": [
     "digital",
     "signature"
   ],
   "author": "@restuhaqza",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "mocha": "^6.2.2"
+  }
 }
