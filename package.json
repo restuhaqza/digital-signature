@@ -1,8 +1,12 @@
 {
   "name": "digital-signature",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Library for create and verify digital signature",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/restuhaqza/digital-signature.git"
+  },
   "scripts": {
     "test": "mocha --check-leaks --reporter spec --bail"
   },
@@ -10,6 +14,12 @@
     "digital",
     "signature"
   ],
+
+  "bugs": {
+    "url": "https://github.com/restuhaqza/digital-signature.git/issues"
+  },
+  "homepage": "https://github.com/restuhaqza/digital-signature.git#readme",
+
   "author": "@restuhaqza",
   "license": "MIT",
   "dependencies": {
