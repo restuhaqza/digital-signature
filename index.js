@@ -39,7 +39,9 @@ function verifySign(message, signature) {
 
 module.exports = {
   setPrivateKey,
+  getPrivateKey,
   setPublicKey,
+  getPublicKey,
   createSign,
   verifySign
 }
