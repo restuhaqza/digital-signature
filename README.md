@@ -4,7 +4,7 @@ Library for create and verify Digital Signature based on RSA-SHA256 algorithm.
 
 ## Installation
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
+Use the package manager [npm](https://www.npmjs.com/) to install foobar.
 
 ```bash
 npm install digital-signature
