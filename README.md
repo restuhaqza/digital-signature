@@ -30,7 +30,7 @@ var publicKey = 'YOUR-PUBLIC-KEY'
 
 setPrivateKey(privateKey) //assign private key
 getPrivateKey() //return private key
-getPublicKey(publicKey) //assign public key
+setPublicKey(publicKey) //assign public key
 getPublicKey() return public key
 
 const digitalSignature =  createSign('your data')
