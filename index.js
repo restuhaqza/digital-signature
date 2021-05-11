@@ -7,7 +7,7 @@ function setPrivateKey(value) {
   private_key = value
 }
 
-function getPrivateKey(value) {
+function getPrivateKey() {
   return private_key
 }
 
@@ -15,7 +15,7 @@ function setPublicKey(value) {
   public_key = value
 }
 
-function getPublicKey(value) {
+function getPublicKey() {
   return public_key
 }
 
