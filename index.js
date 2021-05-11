@@ -1,9 +1,30 @@
 var crypto = require("crypto")
 
 class Digital_Signature{
-  constructor(){
+  generateNewKeyPair(callback){
+    crypto.generateKeyPair('rsa', {
+      modulusLength: 1024,
+      publicKeyEncoding: {
+      type: 'spki',
+      format: 'pem'
+      },
+      privateKeyEncoding: {
+      type: 'pkcs8',
+      format: 'pem'
+      }
+    }, callback);
+  }
+
+  constructor(generateNewKeyPair = false){
     this.private_key;
     this.public_key;
+    if (generateNewKeyPair == true){
+      this.generateNewKeyPair((err, publicKey, privateKey) =>{
+        if (err) throw err;
+        this.public_key = publicKey;
+        this.private_key = privateKey;
+      });
+    }
   }
 
   setPrivateKey(value) {
