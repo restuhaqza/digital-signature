@@ -1,6 +1,6 @@
 {
   "name": "digital-signature",
-  "version": "1.0.4",
+  "version": "2.0.0",
   "description": "Library for create and verify digital signature",
   "main": "index.js",
   "repository": {
@@ -14,12 +14,10 @@
     "digital",
     "signature"
   ],
-
   "bugs": {
     "url": "https://github.com/restuhaqza/digital-signature.git/issues"
   },
   "homepage": "https://github.com/restuhaqza/digital-signature.git#readme",
-
   "author": "@restuhaqza",
   "license": "MIT",
   "dependencies": {
