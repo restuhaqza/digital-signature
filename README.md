@@ -1,10 +1,10 @@
 # Digital Signature
 
-Library for create and verify Digital Signature based on RSA-SHA256 algorithm.
+Library for creating and verifying Digital Signatures based on the RSA-SHA256 algorithm.
 
 ## Installation
 
-Use the package manager [npm](https://www.npmjs.com/) to install foobar.
+Using [npm](https://www.npmjs.com/):
 
 ```bash
 npm install digital-signature
@@ -14,31 +14,25 @@ npm install digital-signature
 
 ```javascript
 
-var {
-  setPrivateKey,
-  getPrivateKey,
-  setPublicKey,
-  getPublicKey,
-  createSign,
-  verifySign
-} = require("digital-signature")
+const Digital_Signature = require("digital-signature")
+var digitalSignature = new Digital_Signature()
 
-
+//From existing key pair
 var privateKey = 'YOUR-PRIVATE-KEY'
 var publicKey = 'YOUR-PUBLIC-KEY'
-
-
 setPrivateKey(privateKey) //assign private key
 getPrivateKey() //return private key
 setPublicKey(publicKey) //assign public key
 getPublicKey() return public key
 
-const digitalSignature =  createSign('your data')
+//... or create new keys
+digitalSignature.generateNewKeyPair((err, publicKey, privateKey) =>{
+  // Optional callback function
+    // Do something here
+})
 
-const isVerified = verifySign('your data', digitalSignature)// if valid will be return 'true' and if invalid will be return false
-
-
-
+const signedData =  createSign('your data')
+const isVerified = verifySign('your data', signedData) // returns true if valid
 ```
 
 ## Contributing
