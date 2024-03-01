@@ -23,6 +23,6 @@
   "author": "@restuhaqza",
   "license": "MIT",
   "dependencies": {
-    "mocha": "^6.2.2"
+    "mocha": "^10.3.0"
   }
 }
